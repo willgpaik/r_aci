@@ -25,6 +25,6 @@ From: willgpaik/centos7_aci
   make && make install
   
   cd /tmp
-  rm -f R-3.6.1*
+  rm -rf R-3.6.1*
   
   
