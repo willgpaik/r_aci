@@ -12,7 +12,7 @@ From: willgpaik/centos7_aci
 %runscript
 
 %post
-  yum -y install zlib-devel bzip2-devel xz-devel pcre-devel curl-devel
+  yum -y install zlib-devel bzip2-devel xz-devel pcre-devel curl-devel readline-devel
   yum -y update
   
   source /opt/rh/devtoolset-8/enable
