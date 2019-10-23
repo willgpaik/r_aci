@@ -1,4 +1,4 @@
-Boostrap: shub
+Bootstrap: shub
 From: willgpaik/r_aci:latest
 
 %setup
