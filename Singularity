@@ -18,13 +18,13 @@ From: willgpaik/centos7_aci
   source /opt/rh/devtoolset-8/enable
   mkdir -p /opt/sw/r
   cd /tmp
-  wget http://lib.stat.cmu.edu/R/CRAN/src/base/R-3/R-3.6.1.tar.gz
-  tar -xf R-3.6.1.tar.gz
-  cd R-3.6.1
+  wget http://lib.stat.cmu.edu/R/CRAN/src/base/R-4/R-4.0.2.tar.gz
+  tar -xf R-4.0.2.tar.gz
+  cd R-4.0.2
   ./configure --prefix=/opt/sw/r
   make && make install
   
   cd /tmp
-  rm -rf R-3.6.1*
+  rm -rf R-4.0.2*
   
   
