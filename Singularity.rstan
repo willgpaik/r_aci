@@ -1,0 +1,16 @@
+Bootstrap: shub
+From: willgpaik/r_aci:latest
+
+%environment
+    export PATH=$PATH:/opt/sw/r/bin
+    
+%runscript
+    exec "$@"
+
+%post
+    yum -y install v8-devel
+    yum -y update
+
+    export PATH=$PATH:/opt/sw/r/bin
+
+    R --vanilla -e "install.packages('rstan', repos='http://lib.stat.cmu.edu/R/CRAN/')"
