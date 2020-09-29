@@ -4,6 +4,7 @@ From: willgpaik/r_aci:latest
 %environment
     source /opt/rh/devtoolset-8/enable
     export PATH=$PATH:/opt/sw/r/bin
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/sw/r/lib64
     
 %runscript
     exec "$@"
@@ -15,5 +16,6 @@ From: willgpaik/r_aci:latest
     source /opt/rh/devtoolset-8/enable
 
     export PATH=$PATH:/opt/sw/r/bin
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/sw/r/lib64
 
     R --vanilla -e "install.packages('rstan', repos='http://lib.stat.cmu.edu/R/CRAN/')"
