@@ -1,5 +1,7 @@
 # r_aci
-Singularity recipes for R on Centos 7 for ICS ACI clusters
+Singularity recipes for R on Centos 7 for ICS ACI clusters  
+If libraries are not accessible, either change the default library path (not recommended) or copy installed libraries to local directory:  
+``cp -R /opt/sw/r/lib64/R/library/* /storage/home/<USER_ID>/R/x86_64-pc-linux-gnu-library/4.0/``
 
 2019/10/22  
 Base image is built with R 3.6.1
